@@ -1,0 +1,12 @@
+.container {
+  @apply bg-gray rounded-md p-2 w-32 my-4
+}
+.year {
+  @apply text-greytext
+}
+.title {
+  @apply text-greytext
+}
+.location {
+  @apply text-greytext
+}

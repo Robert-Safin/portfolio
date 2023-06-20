@@ -1,0 +1,9 @@
+.container {
+  @apply bg-gray p-2 rounded-md
+}
+.image {
+  @apply object-cover w-32 h-32 rounded-md
+}
+.title {
+  @apply w-32 text-greytext
+}

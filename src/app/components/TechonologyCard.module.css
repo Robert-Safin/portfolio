@@ -1,0 +1,14 @@
+.container {
+  @apply bg-gray p-2 rounded-md
+}
+
+.image {
+  @apply w-20 h-20 object-cover rounded-md
+}
+.name {
+  @apply text-greytext text-sm w-20 pb-1 pt-2
+}
+
+.fill {
+  @apply bg-neutral-700 rounded-md p-2
+}
