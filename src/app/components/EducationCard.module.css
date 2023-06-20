@@ -1,11 +1,11 @@
 .container {
-  @apply bg-gray rounded-md p-2 w-32 my-4
+  @apply bg-gray rounded-md p-2 w-full my-4 shadow shadow-black
 }
 .year {
-  @apply text-greytext
+  @apply text-greytext tracking-widest
 }
 .title {
-  @apply text-greytext
+  @apply text-greytext font-bold
 }
 .location {
   @apply text-greytext

@@ -15,6 +15,7 @@ module.exports = {
       colors: {
         black: "#181818",
         gray: "#242424",
+        hoverGray: "#303030",
         greytext: '#CECECE'
       },
     },

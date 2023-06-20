@@ -1,5 +1,9 @@
 .container {
-  @apply bg-gray p-2 rounded-md
+  @apply bg-gray p-2 rounded-md shadow shadow-black
+}
+
+.container:hover {
+  @apply bg-hoverGray p-2 rounded-md
 }
 
 .image {
@@ -10,5 +14,5 @@
 }
 
 .fill {
-  @apply bg-neutral-700 rounded-md p-2
+  @apply bg-neutral-700 rounded-md p-2 shadow shadow-black
 }

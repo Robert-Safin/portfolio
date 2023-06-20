@@ -3,11 +3,11 @@
   @apply m-4
 }
 .avatar {
-  @apply w-56 h-56 object-cover
+  @apply w-56 h-56 object-cover rounded-md shadow shadow-black
 }
 
 .avatarAndContact {
-  @apply flex bg-gray p-4 rounded-md
+  @apply flex bg-gray p-4 rounded-md shadow shadow-black
 }
 .contacts {
   @apply flex flex-col justify-between ml-4
@@ -37,7 +37,7 @@
 }
 
 .about {
-  @apply bg-gray p-4 rounded-md
+  @apply bg-gray p-4 rounded-md shadow shadow-black
 }
 
 .aboutText {
@@ -81,10 +81,13 @@
   @apply border-b border-white
 }
 
-.languages {
-  @apply bg-gray rounded-md mb-4 w-36 p-2
-}
+
 
 .language {
   @apply text-greytext
+}
+
+.languageBox {
+  @apply bg-gray rounded-md mb-4 w-full p-2 shadow shadow-black
+
 }

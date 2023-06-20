@@ -1,16 +1,17 @@
 import Image from "next/image"
 import styles from './page.module.css'
 
-import { IoLogoCss3, IoLogoGithub } from 'react-icons/io'
+import { IoLogoCss3, IoLogoGithub, IoMdMap } from 'react-icons/io'
 import { AiOutlineHtml5, AiOutlineMail } from 'react-icons/ai'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import { AiOutlineWhatsApp } from 'react-icons/ai'
 import ProjectCard from "./components/ProjectCard"
 import TechnologyCard from "./components/TechnologyCard"
 import EducationCard from "./components/EducationCard"
-import { DiCss3, DiReact, DiRubyRough } from 'react-icons/di'
+import { DiCss3, DiMongodb, DiReact, DiRubyRough } from 'react-icons/di'
 import { IoLogoJavascript } from 'react-icons/io'
-import { SiCss3, SiCsswizardry, SiExpress, SiHtml5, SiNextdotjs, SiRubyonrails, SiTypescript } from 'react-icons/si'
+import { SiCss3, SiCsswizardry, SiExpress, SiFirebase, SiHtml5, SiMongodb, SiNextdotjs, SiPostgresql, SiPrisma, SiRubyonrails, SiSqlite, SiTypescript } from 'react-icons/si'
+import Link from "next/link"
 
 const HomePage = () => {
   return (
@@ -20,10 +21,18 @@ const HomePage = () => {
         <Image className={styles.avatar} src={`/me.png`} alt={'Robert Safin'} width={1000} height={1000} />
         <div className={styles.contacts}>
           <h1 className={styles.contactHeader}>Contact</h1>
-          <div className={styles.contactItem}> <IoLogoGithub className={styles.contactIcon} /> <p className={styles.contactText}>Github</p> </div>
+          <Link href={`https://github.com/Robert-Safin`}>
+            <div className={styles.contactItem}> <IoLogoGithub className={styles.contactIcon} /> <p className={styles.contactText}>GitHub</p> </div>
+          </Link>
+          <Link href={`mailto:robertsafin98@gmail.com`}>
           <div className={styles.contactItem}> <AiOutlineMail className={styles.contactIcon} /> <p className={styles.contactText}>Email</p> </div>
-          <div className={styles.contactItem}> <AiOutlineLinkedin className={styles.contactIcon} /> <p className={styles.contactText}>LinkedIn</p> </div>
+          </Link>
+          <Link href={`https://www.linkedin.com/in/robert-safin/`}>
+            <div className={styles.contactItem}> <AiOutlineLinkedin className={styles.contactIcon} /> <p className={styles.contactText}>LinkedIn</p> </div>
+          </Link>
+          <Link href={`https://wa.me/+79670429889`}>
           <div className={styles.contactItem}> <AiOutlineWhatsApp className={styles.contactIcon} /> <p className={styles.contactText}>WhatsApp</p> </div>
+          </Link>
         </div>
       </div>
 
@@ -39,12 +48,12 @@ const HomePage = () => {
 
       <h1 className={styles.projectHeader}>Projects</h1>
       <div className={styles.projectCards}>
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
+        <ProjectCard title="lorem" />
+        <ProjectCard title="lorem" />
+        <ProjectCard title="lorem" />
+        <ProjectCard title="lorem" />
+        <ProjectCard title="lorem" />
+        <ProjectCard title="lorem" />
       </div>
 
 
@@ -62,47 +71,56 @@ const HomePage = () => {
 
       <h1 className={styles.technologyHeader}>Frameworks</h1>
       <div className={styles.technologyGroup}>
-        <TechnologyCard icon={<SiNextdotjs/>} name={'Next.js'} />
-        <TechnologyCard icon={<DiReact/>} name={'React.js'} />
-        <TechnologyCard icon={<SiExpress/>} name={'Express.js'} />
-        <TechnologyCard icon={<SiRubyonrails/>} name={'Ruby On Rails'} />
+        <TechnologyCard icon={<SiNextdotjs className={styles.techIcon} style={{ color: "rgb(241, 241, 241)" }} />} name={'Next'} />
+        <TechnologyCard icon={<DiReact className={styles.techIcon} style={{ color: "rgb(79, 226, 226)" }} />} name={'React'} />
+        <TechnologyCard icon={<SiExpress className={styles.techIcon} style={{ color: "rgb(168, 162, 161)" }} />} name={'Express'} />
+        <TechnologyCard icon={<SiRubyonrails className={styles.techIcon} style={{ color: "rgb(160, 40, 20)" }} />} name={'Rails'} />
 
 
       </div>
 
       <h1 className={styles.technologyHeader}>Databases & ORMs</h1>
       <div className={styles.technologyGroup}>
-        <TechnologyCard icon={''} name={''} />
-        <TechnologyCard icon={''} name={''} />
-        <TechnologyCard icon={''} name={''} />
-        <TechnologyCard icon={''} name={''} />
-        <TechnologyCard icon={''} name={''} />
-        <TechnologyCard icon={''} name={''} />
-        <TechnologyCard icon={''} name={''} />
+        <TechnologyCard icon={<SiPostgresql className={styles.techIcon} style={{ color: "rgb(61, 97, 134)" }} />} name={'Postgres'} />
+        <TechnologyCard icon={<SiSqlite className={styles.techIcon} style={{ color: "rgb(129, 177, 219)" }} />} name={'SQLite'} />
+        <TechnologyCard icon={<SiPrisma className={styles.techIcon} style={{ color: "rgb(24, 49, 69)" }} />} name={'Prisma'} />
+        <TechnologyCard icon={<SiMongodb className={styles.techIcon} style={{ color: "rgb(75, 158, 85)" }} />} name={'MongoDB'} />
+        <TechnologyCard icon={<DiMongodb className={styles.techIcon} style={{ color: "rgb(64, 137, 82)" }} />} name={'MongoAtlas'} />
+        <TechnologyCard icon={<IoMdMap className={styles.techIcon} style={{ color: "rgb(118, 21, 13)" }} />} name={'Mongoose'} />
+        <TechnologyCard icon={<SiFirebase className={styles.techIcon} style={{ color: "rgb(230, 160, 60)" }} />} name={'Firebase'} />
 
       </div>
 
       <div className={styles.miscGroup}>
         <h1 className={styles.educationHeader}>Education</h1>
-        <EducationCard />
-        <EducationCard />
-        <EducationCard />
+        <EducationCard year={'2023'} title="WEB DEVLOPMENT BOOTCAMP" location="Le Wagon, Bali" />
+        <EducationCard year={'2020'} title="MS REAL ESTATE DEVELOPMENT" location="University of Westminster, London" />
+        <EducationCard year={'2019'} title="BA INTERNATIONAL BUSINESS (SPANISH)" location="University of Westminster, London" />
       </div>
 
       <div className={styles.miscGroup}>
         <h1 className={styles.educationHeader}>Career</h1>
-        <EducationCard />
-        <EducationCard />
-        <EducationCard />
+        <EducationCard year={'2022-2023'} title="Economist at a Petroleum Company" location="Moscow, Russia" />
+        <EducationCard year={'2021-2022'} title="Real Estate Developer" location="Moscow, Russia" />
       </div>
 
       <div className={styles.miscGroup}>
         <h1 className={styles.educationHeader}>Languages</h1>
 
         <div className={styles.languages}>
-          <p className={styles.language}>English - Native</p>
-          <p className={styles.language}>Russian - Native</p>
-          <p className={styles.language}>Spanish - Casual</p>
+
+          <div className={styles.languageBox}>
+            <p className={styles.language}>English | Native</p>
+          </div>
+
+          <div className={styles.languageBox}>
+            <p className={styles.language}>Russian | Native</p>
+          </div>
+
+          <div className={styles.languageBox}>
+            <p className={styles.language}>Spanish | Casual</p>
+          </div>
+
         </div>
 
       </div>
