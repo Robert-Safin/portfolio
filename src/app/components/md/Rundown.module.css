@@ -7,10 +7,10 @@
 
 }
 .contactContainer {
-  @apply border-b border-white mb-4
+  @apply border-b border-white pb-8 mb-8
 }
 .header {
-  @apply text-3xl  text-white mb-3
+  @apply text-lg  text-white mb-3
 }
 
 .contactItem {
@@ -18,33 +18,33 @@
 }
 
 .contactIcon {
-  @apply text-3xl mr-2  text-greytext
+  @apply text-2xl mr-2  text-greytext
 }
 
 .contactText {
-  @apply text-greytext
+  @apply text-greytext text-sm
 }
 
 .educationContainer {
-  @apply border-b border-white mb-4
+  @apply border-b border-white pb-8 mb-8
 }
 .educationItem {
   @apply my-4
 }
 .year {
-  @apply text-greytext tracking-widest
+  @apply text-greytext tracking-widest text-sm
 }
 
 .title {
-  @apply text-greytext font-extrabold
+  @apply text-greytext font-extrabold text-sm
 }
 
 .location {
-  @apply text-greytext
+  @apply text-greytext text-sm
 }
 
 .careerContainer {
-  @apply border-b border-white mb-4
+  @apply border-b border-white pb-8 mb-8
 }
 
 .languages {

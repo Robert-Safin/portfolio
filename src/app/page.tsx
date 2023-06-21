@@ -11,21 +11,23 @@ import TechnologyCard from "./components/TechnologyCard"
 import EducationCard from "./components/EducationCard"
 import {  DiMongodb, DiReact, DiRubyRough } from 'react-icons/di'
 import { IoLogoJavascript } from 'react-icons/io'
-import { SiCss3, SiExpress, SiFirebase, SiHtml5, SiMongodb, SiNextdotjs, SiPostgresql, SiPrisma, SiRubyonrails, SiSqlite, SiTypescript } from 'react-icons/si'
+import { SiBootstrap, SiCss3, SiExpress, SiFirebase, SiHtml5, SiMongodb, SiNextdotjs, SiPostgresql, SiPrisma, SiRubyonrails, SiSqlite, SiTailwindcss, SiTypescript } from 'react-icons/si'
 import Link from "next/link"
 import SideBar from "./components/md/Rundown"
 import { useState } from "react"
+import { useRouter } from "next/router"
 
 const HomePage = () => {
+  const router = useRouter()
 
-  const [backgroundColor, setBackgroundColor] = useState("linear-gradient(0deg, rgba(4,4,4) 9%, rgba(22,22,22) 27%, rgba(40,40,40) 46%)")
+  const [backgroundColor, setBackgroundColor] = useState("linear-gradient(0deg, rgba(0,0,0,1) 36%, rgba(33,33,33,1) 83%)")
 
   const handleBackgroundColorChange = (color:any) => {
     setBackgroundColor(color)
   }
 
   const resetBackgroundColor = () => [
-    setBackgroundColor("linear-gradient(0deg, rgba(4,4,4) 9%, rgba(22,22,22) 27%, rgba(40,40,40) 46%)")
+    setBackgroundColor("linear-gradient(0deg, rgba(0,0,0,1) 36%, rgba(33,33,33,1) 83%)")
   ]
   return (
     <div className={styles.split}>
@@ -74,12 +76,12 @@ const HomePage = () => {
         <div className={styles.projectsContainer}>
           <h1 className={styles.projectHeader}>Projects</h1>
           <div className={styles.projectCards}>
-            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(45,0,0,1) 27%, rgba(89,0,0,1) 46%)'}/>
-            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(0,17,45,1) 27%, rgba(0,28,75,1) 46%)'}/>
-            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(4,4,4) 9%, rgba(28,150,18) 27%, rgba(50,29,210) 46%)'}/>
-            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(4,4,4) 9%, rgba(28,210,18) 27%, rgba(45,29,29) 46%)'}/>
-            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(4,4,4) 9%, rgba(150,50,18) 27%, rgba(45,150,29) 46%)'}/>
-            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(4,4,4) 9%, rgba(210,18,18) 27%, rgba(50,29,150) 46%)'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(40,0,0,1) 27%)'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(0,10,40,1) 27% )'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(10,0,20,1) 27% )'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(5,10,18,1) 27%)'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(0,10,10,1) 27% )'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(20,20,10,1) 27% )'}/>
           </div>
 
         </div>
@@ -90,9 +92,9 @@ const HomePage = () => {
 
           <h1 className={styles.technologyHeader}>Languages</h1>
           <div className={styles.technologyGroup}>
+            <TechnologyCard icon={<SiTypescript className={styles.techIcon} style={{ color: "rgb(60, 110, 180)" }} />} name={'TypeScript'} />
             <TechnologyCard icon={<DiRubyRough className={styles.techIcon} style={{ color: "rgb(160, 40, 20)" }} />} name={'Ruby'} />
             <TechnologyCard icon={<IoLogoJavascript className={styles.techIcon} style={{ color: "rgb(224, 209, 99)" }} />} name={'JavaScript'} />
-            <TechnologyCard icon={<SiTypescript className={styles.techIcon} style={{ color: "rgb(60, 110, 180)" }} />} name={'TypeScript'} />
             <TechnologyCard icon={<SiHtml5 className={styles.techIcon} style={{ color: "rgb(210, 85, 50)" }} />} name={'HTML'} />
             <TechnologyCard icon={<SiCss3 className={styles.techIcon} style={{ color: "rgb(50, 70, 210)" }} />} name={'CSS'} />
 
@@ -104,6 +106,10 @@ const HomePage = () => {
             <TechnologyCard icon={<DiReact className={styles.techIcon} style={{ color: "rgb(79, 226, 226)" }} />} name={'React'} />
             <TechnologyCard icon={<SiExpress className={styles.techIcon} style={{ color: "rgb(168, 162, 161)" }} />} name={'Express'} />
             <TechnologyCard icon={<SiRubyonrails className={styles.techIcon} style={{ color: "rgb(160, 40, 20)" }} />} name={'Rails'} />
+
+            <TechnologyCard icon={<SiTailwindcss className={styles.techIcon} style={{ color: "rgb(40, 196, 228)" }} />} name={'TailWindCss'} />
+            <TechnologyCard icon={<SiBootstrap className={styles.techIcon} style={{ color: "rgb(122, 21, 195)" }} />} name={'Bootstrap'} />
+
 
 
           </div>
