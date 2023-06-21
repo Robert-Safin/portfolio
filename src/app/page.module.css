@@ -1,6 +1,14 @@
 .split {
   @apply md:flex
 }
+
+.projectsContainer {
+
+}
+
+.technologiesContainer {
+
+}
 .container {
   @apply m-4
   md:w-3/4
