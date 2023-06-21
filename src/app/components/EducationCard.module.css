@@ -1,5 +1,5 @@
 .container {
-  @apply bg-gray rounded-md p-2 w-full my-4 shadow shadow-black
+  @apply bg-gray/75  rounded-md p-2 w-full my-4 shadow shadow-black
 }
 .year {
   @apply text-greytext tracking-widest

@@ -1,39 +1,43 @@
 .split {
-  @apply md:flex
+  @apply xl:flex
 }
 
 .cards {
-  @apply md:flex md:w-full md:space-x-10
+  @apply xl:flex xl:w-full xl:space-x-10
 }
 
 .projectsContainer {
- @apply md:w-1/2
+ @apply xl:w-1/2
 }
 
 .technologiesContainer {
- @apply md:w-1/2
+ @apply xl:w-1/2
 }
 .container {
-  @apply m-4
-  md:w-3/4
-  md:h-full
+  @apply p-4
+  xl:w-4/5
+  xl:h-full
+  /* transition-colors duration-1000 ease-in-out */
+
 }
 .avatar {
   @apply w-56 h-56 object-cover rounded-md shadow shadow-black
-  md:w-72 md:h-72
+  xl:w-72 xl:h-72
 
 }
 
 .avatarAndContact {
-  @apply flex bg-gray p-4 rounded-md shadow shadow-black
+  @apply flex bg-gray/75  p-4 rounded-md shadow shadow-black
+  md:justify-evenly
+
 }
 .contacts {
   @apply flex flex-col justify-between ml-4
-  md:hidden
+  xl:hidden
 }
 .contactHeader {
-  @apply text-greytext text-2xl
-  md:text-3xl
+  @apply text-white text-2xl
+  xl:text-3xl
 }
 .contactItem {
   @apply text-greytext flex items-center
@@ -53,14 +57,14 @@
 
 
 .aboutHeader {
-  @apply text-greytext text-2xl my-4
-  md:hidden
+  @apply text-white text-2xl my-4
+  xl:hidden
 
 }
 
 .about {
-  @apply bg-gray p-4 rounded-md shadow shadow-black
-  md:hidden
+  @apply bg-gray/75  p-4 rounded-md shadow shadow-black
+  xl:hidden
 }
 
 .aboutText {
@@ -68,51 +72,51 @@
 }
 .MDaboutText {
   @apply hidden
-  md:block md:ml-4 text-greytext
+  xl:block xl:ml-4 text-greytext
 }
 
 
 
 .projectHeader {
-  @apply text-greytext text-2xl my-4
-  md:text-3xl md:my-8
+  @apply text-white text-2xl my-4
+  xl:text-3xl xl:my-6
 }
 
 .projectCards {
   @apply flex w-full overflow-x-scroll space-x-4
-  md:flex-wrap md:space-x-0 md:justify-between md:h-[600px] md:overflow-y-scroll
+  xl:flex-wrap xl:space-x-0 xl:justify-between xl:h-[600px] xl:overflow-y-scroll
 }
 
 
 
 .technologiesHeader {
-  @apply text-greytext text-2xl my-4
-  md:text-3xl md:my-8
+  @apply text-white text-2xl my-4
+  xl:text-3xl xl:my-6
 }
 
 .technologyHeader {
-  @apply text-greytext my-2
-  md:text-xl
+  @apply text-white my-2
+  xl:text-xl
 }
 
 .technologyGroup {
   @apply flex w-full overflow-x-scroll space-x-4
-  md:space-x-8
+  xl:space-x-8
 }
 
 .techIcon {
   @apply text-6xl mx-auto
-  md:text-8xl
+  xl:text-8xl
 }
 
 
 .educationHeader {
-  @apply text-greytext text-2xl my-4
+  @apply text-white text-2xl my-4
 
 }
 .miscGroup {
   @apply border-b border-white
-  md:hidden
+  xl:hidden
 }
 
 
@@ -122,6 +126,6 @@
 }
 
 .languageBox {
-  @apply bg-gray rounded-md mb-4 w-full p-2 shadow shadow-black
+  @apply bg-gray/75  rounded-md mb-4 w-full p-2 shadow shadow-black
 
 }

@@ -1,7 +1,11 @@
 .container {
-  @apply bg-gray p-2 rounded-md shadow shadow-black md:mb-8
-
+  @apply bg-gray/75  p-3 rounded-md shadow shadow-black md:mb-8
 }
+
+.container:hover {
+  @apply bg-hoverGray/75
+}
+
 .image {
   @apply object-cover w-32 h-32 rounded-md shadow shadow-black
   md:w-52 md:h-52

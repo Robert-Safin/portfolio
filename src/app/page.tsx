@@ -1,24 +1,36 @@
+'use client'
 import Image from "next/image"
 import styles from './page.module.css'
 
-import { IoLogoCss3, IoLogoGithub, IoMdMap } from 'react-icons/io'
-import { AiOutlineHtml5, AiOutlineMail } from 'react-icons/ai'
+import {  IoLogoGithub, IoMdMap } from 'react-icons/io'
+import {  AiOutlineMail } from 'react-icons/ai'
 import { AiOutlineLinkedin } from 'react-icons/ai'
 import { AiOutlineWhatsApp } from 'react-icons/ai'
 import ProjectCard from "./components/ProjectCard"
 import TechnologyCard from "./components/TechnologyCard"
 import EducationCard from "./components/EducationCard"
-import { DiCss3, DiMongodb, DiReact, DiRubyRough } from 'react-icons/di'
+import {  DiMongodb, DiReact, DiRubyRough } from 'react-icons/di'
 import { IoLogoJavascript } from 'react-icons/io'
-import { SiCss3, SiCsswizardry, SiExpress, SiFirebase, SiHtml5, SiMongodb, SiNextdotjs, SiPostgresql, SiPrisma, SiRubyonrails, SiSqlite, SiTypescript } from 'react-icons/si'
+import { SiCss3, SiExpress, SiFirebase, SiHtml5, SiMongodb, SiNextdotjs, SiPostgresql, SiPrisma, SiRubyonrails, SiSqlite, SiTypescript } from 'react-icons/si'
 import Link from "next/link"
 import SideBar from "./components/md/Rundown"
+import { useState } from "react"
 
 const HomePage = () => {
+
+  const [backgroundColor, setBackgroundColor] = useState("linear-gradient(0deg, rgba(4,4,4) 9%, rgba(22,22,22) 27%, rgba(40,40,40) 46%)")
+
+  const handleBackgroundColorChange = (color:any) => {
+    setBackgroundColor(color)
+  }
+
+  const resetBackgroundColor = () => [
+    setBackgroundColor("linear-gradient(0deg, rgba(4,4,4) 9%, rgba(22,22,22) 27%, rgba(40,40,40) 46%)")
+  ]
   return (
     <div className={styles.split}>
       <SideBar />
-      <div className={styles.container}>
+      <div className={styles.container} style={{background: backgroundColor}}>
 
         <div className={styles.avatarAndContact}>
           <Image className={styles.avatar} src={`/me.png`} alt={'Robert Safin'} width={1000} height={1000} />
@@ -62,12 +74,12 @@ const HomePage = () => {
         <div className={styles.projectsContainer}>
           <h1 className={styles.projectHeader}>Projects</h1>
           <div className={styles.projectCards}>
-            <ProjectCard title="lorem" />
-            <ProjectCard title="lorem" />
-            <ProjectCard title="lorem" />
-            <ProjectCard title="lorem" />
-            <ProjectCard title="lorem" />
-            <ProjectCard title="lorem" />
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(45,0,0,1) 27%, rgba(89,0,0,1) 46%)'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(0,17,45,1) 27%, rgba(0,28,75,1) 46%)'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(4,4,4) 9%, rgba(28,150,18) 27%, rgba(50,29,210) 46%)'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(4,4,4) 9%, rgba(28,210,18) 27%, rgba(45,29,29) 46%)'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(4,4,4) 9%, rgba(150,50,18) 27%, rgba(45,150,29) 46%)'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(4,4,4) 9%, rgba(210,18,18) 27%, rgba(50,29,150) 46%)'}/>
           </div>
 
         </div>

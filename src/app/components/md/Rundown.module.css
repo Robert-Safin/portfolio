@@ -1,5 +1,52 @@
 .container {
   @apply hidden
-  md:block
-  w-1/4 bg-black
+  xl:block
+  w-1/5 bg-black
+  p-4
+
+
+}
+.contactContainer {
+  @apply border-b border-white mb-4
+}
+.header {
+  @apply text-3xl  text-white mb-3
+}
+
+.contactItem {
+  @apply flex items-center my-2
+}
+
+.contactIcon {
+  @apply text-3xl mr-2  text-greytext
+}
+
+.contactText {
+  @apply text-greytext
+}
+
+.educationContainer {
+  @apply border-b border-white mb-4
+}
+.educationItem {
+  @apply my-4
+}
+.year {
+  @apply text-greytext tracking-widest
+}
+
+.title {
+  @apply text-greytext font-extrabold
+}
+
+.location {
+  @apply text-greytext
+}
+
+.careerContainer {
+  @apply border-b border-white mb-4
+}
+
+.languages {
+  @apply text-greytext my-2
 }

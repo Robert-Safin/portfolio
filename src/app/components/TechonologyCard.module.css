@@ -1,9 +1,9 @@
 .container {
-  @apply bg-gray p-2 rounded-md shadow shadow-black
+  @apply bg-gray/75 p-3 rounded-md shadow shadow-black
 }
 
 .container:hover {
-  @apply bg-hoverGray p-2 rounded-md
+  @apply bg-hoverGray/75 p-3 rounded-md
 }
 
 .image {
