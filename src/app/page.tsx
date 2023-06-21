@@ -12,13 +12,19 @@ import { DiCss3, DiMongodb, DiReact, DiRubyRough } from 'react-icons/di'
 import { IoLogoJavascript } from 'react-icons/io'
 import { SiCss3, SiCsswizardry, SiExpress, SiFirebase, SiHtml5, SiMongodb, SiNextdotjs, SiPostgresql, SiPrisma, SiRubyonrails, SiSqlite, SiTypescript } from 'react-icons/si'
 import Link from "next/link"
+import SideBar from "./components/md/Rundown"
 
 const HomePage = () => {
   return (
+    <div className={styles.split}>
+      <SideBar/>
     <div className={styles.container}>
 
       <div className={styles.avatarAndContact}>
         <Image className={styles.avatar} src={`/me.png`} alt={'Robert Safin'} width={1000} height={1000} />
+        <p className={styles.MDaboutText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla facilisi morbi tempus iaculis urna. Elementum sagittis vitae et leo duis. Interdum velit laoreet id donec ultrices tincidunt arcu. Blandit cursus risus at ultrices mi tempus imperdiet nulla. Lorem ipsum dolor sit amet consectetur adipiscing elit pellentesque. Turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus. Faucibus in ornare quam viverra. Tempor commodo ullamcorper a lacus vestibulum sed. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi. Urna porttitor rhoncus dolor purus non enim praesent elementum. Vehicula ipsum a arcu cursus vitae congue. Integer enim neque volutpat ac tincidunt vitae semper quis lectus. Enim facilisis gravida neque convallis a.
+          Eget egestas purus viverra accumsan in nisl nisi scelerisque. Eget sit amet tellus cras adipiscing enim eu turpis. Pretium lectus quam id leo in. Orci eu lobortis elementum nibh tellus. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Dictum sit amet justo donec enim diam vulputate. Urna neque viverra justo nec ultrices. Odio eu feugiat pretium nibh ipsum consequat nisl vel. Sit amet consectetur adipiscing elit ut aliquam purus sit. Dignissim convallis aenean et tortor at risus viverra adipiscing at.
+        </p>
         <div className={styles.contacts}>
           <h1 className={styles.contactHeader}>Contact</h1>
           <Link href={`https://github.com/Robert-Safin`}>
@@ -126,6 +132,7 @@ const HomePage = () => {
       </div>
 
 
+    </div>
     </div>
 
   )

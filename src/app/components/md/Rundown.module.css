@@ -1,0 +1,5 @@
+.container {
+  @apply hidden
+  md:block
+  w-1/4 bg-black
+}
