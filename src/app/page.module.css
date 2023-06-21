@@ -2,19 +2,26 @@
   @apply md:flex
 }
 
-.projectsContainer {
+.cards {
+  @apply md:flex md:w-full md:space-x-10
+}
 
+.projectsContainer {
+ @apply md:w-1/2
 }
 
 .technologiesContainer {
-
+ @apply md:w-1/2
 }
 .container {
   @apply m-4
   md:w-3/4
+  md:h-full
 }
 .avatar {
   @apply w-56 h-56 object-cover rounded-md shadow shadow-black
+  md:w-72 md:h-72
+
 }
 
 .avatarAndContact {
@@ -26,6 +33,7 @@
 }
 .contactHeader {
   @apply text-greytext text-2xl
+  md:text-3xl
 }
 .contactItem {
   @apply text-greytext flex items-center
@@ -67,28 +75,34 @@
 
 .projectHeader {
   @apply text-greytext text-2xl my-4
+  md:text-3xl md:my-8
 }
 
 .projectCards {
   @apply flex w-full overflow-x-scroll space-x-4
+  md:flex-wrap md:space-x-0 md:justify-between md:h-[600px] md:overflow-y-scroll
 }
 
 
 
 .technologiesHeader {
   @apply text-greytext text-2xl my-4
+  md:text-3xl md:my-8
 }
 
 .technologyHeader {
   @apply text-greytext my-2
+  md:text-xl
 }
 
 .technologyGroup {
   @apply flex w-full overflow-x-scroll space-x-4
+  md:space-x-8
 }
 
 .techIcon {
   @apply text-6xl mx-auto
+  md:text-8xl
 }
 
 

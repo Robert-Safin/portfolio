@@ -1,9 +1,12 @@
 .container {
-  @apply bg-gray p-2 rounded-md shadow shadow-black
+  @apply bg-gray p-2 rounded-md shadow shadow-black md:mb-8
+
 }
 .image {
   @apply object-cover w-32 h-32 rounded-md shadow shadow-black
+  md:w-52 md:h-52
 }
 .title {
   @apply w-32 text-greytext mt-2
+  md:w-52
 }

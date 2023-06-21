@@ -11,6 +11,7 @@
 }
 .name {
   @apply text-greytext text-sm w-20 pb-1 pt-2
+
 }
 
 .fill {
