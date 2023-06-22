@@ -1,9 +1,9 @@
 .container {
-  @apply bg-gray/75 p-3 rounded-md
+  @apply bg-gray/50 p-3 rounded-md
 }
 
 .container:hover {
-  @apply bg-hoverGray/75 p-3 rounded-md
+  @apply bg-hoverGray/50 p-3 rounded-md
 }
 
 .image {

@@ -15,24 +15,25 @@ import { SiBootstrap, SiCss3, SiExpress, SiFirebase, SiHtml5, SiMongodb, SiNextd
 import Link from "next/link"
 import SideBar from "./components/md/Rundown"
 import { useState } from "react"
-import { useRouter } from "next/router"
+import { useRouter } from "next/navigation"
+
 
 const HomePage = () => {
-  const router = useRouter()
+  const router = useRouter
 
-  const [backgroundColor, setBackgroundColor] = useState("linear-gradient(0deg, rgba(0,0,0,1) 36%, rgba(33,33,33,1) 83%)")
+  const [backgroundColor, setBackgroundColor] = useState("rgba(20,20,20,1)")
 
   const handleBackgroundColorChange = (color:any) => {
     setBackgroundColor(color)
   }
 
   const resetBackgroundColor = () => [
-    setBackgroundColor("linear-gradient(0deg, rgba(0,0,0,1) 36%, rgba(33,33,33,1) 83%)")
+    setBackgroundColor("rgba(20,20,20,1)")
   ]
   return (
     <div className={styles.split}>
       <SideBar />
-      <div className={styles.container} style={{background: backgroundColor}}>
+      <div className={styles.container} style={{background: backgroundColor, transitionDuration: "1s"}}>
 
         <div className={styles.avatarAndContact}>
           <Image className={styles.avatar} src={`/me.png`} alt={'Robert Safin'} width={1000} height={1000} />
@@ -76,12 +77,12 @@ const HomePage = () => {
         <div className={styles.projectsContainer}>
           <h1 className={styles.projectHeader}>Projects</h1>
           <div className={styles.projectCards}>
-            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(40,0,0,1) 27%)'}/>
-            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(0,10,40,1) 27% )'}/>
-            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(10,0,20,1) 27% )'}/>
-            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(5,10,18,1) 27%)'}/>
-            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(0,10,10,1) 27% )'}/>
-            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'linear-gradient(0deg, rgba(0,0,0,1) 9%, rgba(20,20,10,1) 27% )'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(40,0,0,1)'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(0,10,40,1)'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(10,0,20,1)'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(5,10,18,1)'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(0,10,10,1)'}/>
+            <ProjectCard title="lorem" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(20,20,10,1)'}/>
           </div>
 
         </div>
@@ -92,23 +93,22 @@ const HomePage = () => {
 
           <h1 className={styles.technologyHeader}>Languages</h1>
           <div className={styles.technologyGroup}>
-            <TechnologyCard icon={<SiTypescript className={styles.techIcon} style={{ color: "rgb(60, 110, 180)" }} />} name={'TypeScript'} />
-            <TechnologyCard icon={<DiRubyRough className={styles.techIcon} style={{ color: "rgb(160, 40, 20)" }} />} name={'Ruby'} />
-            <TechnologyCard icon={<IoLogoJavascript className={styles.techIcon} style={{ color: "rgb(224, 209, 99)" }} />} name={'JavaScript'} />
-            <TechnologyCard icon={<SiHtml5 className={styles.techIcon} style={{ color: "rgb(210, 85, 50)" }} />} name={'HTML'} />
-            <TechnologyCard icon={<SiCss3 className={styles.techIcon} style={{ color: "rgb(50, 70, 210)" }} />} name={'CSS'} />
+            <TechnologyCard icon={<SiTypescript className={styles.techIcon} style={{ color: "rgb(60, 110, 180)" }} />} name={'TypeScript'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(20,30,40,1)'}/>
+            <TechnologyCard icon={<DiRubyRough className={styles.techIcon} style={{ color: "rgb(160, 40, 20)" }} />} name={'Ruby'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(40,10,5,1)'}/>
+            <TechnologyCard icon={<IoLogoJavascript className={styles.techIcon} style={{ color: "rgb(224, 209, 99)" }} />} name={'JavaScript'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(40,35,20,1)'}/>
+            <TechnologyCard icon={<SiHtml5 className={styles.techIcon} style={{ color: "rgb(210, 85, 50)" }} />} name={'HTML'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(40,20,10,1)'}/>
+            <TechnologyCard icon={<SiCss3 className={styles.techIcon} style={{ color: "rgb(50, 70, 210)" }} />} name={'CSS'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(10,10,40,1)'}/>
 
           </div>
 
           <h1 className={styles.technologyHeader}>Frameworks</h1>
           <div className={styles.technologyGroup}>
-            <TechnologyCard icon={<SiNextdotjs className={styles.techIcon} style={{ color: "rgb(241, 241, 241)" }} />} name={'Next'} />
-            <TechnologyCard icon={<DiReact className={styles.techIcon} style={{ color: "rgb(79, 226, 226)" }} />} name={'React'} />
-            <TechnologyCard icon={<SiExpress className={styles.techIcon} style={{ color: "rgb(168, 162, 161)" }} />} name={'Express'} />
-            <TechnologyCard icon={<SiRubyonrails className={styles.techIcon} style={{ color: "rgb(160, 40, 20)" }} />} name={'Rails'} />
-
-            <TechnologyCard icon={<SiTailwindcss className={styles.techIcon} style={{ color: "rgb(40, 196, 228)" }} />} name={'TailWindCss'} />
-            <TechnologyCard icon={<SiBootstrap className={styles.techIcon} style={{ color: "rgb(122, 21, 195)" }} />} name={'Bootstrap'} />
+            <TechnologyCard icon={<SiNextdotjs className={styles.techIcon} style={{ color: "rgb(241, 241, 241)" }} />} name={'Next'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(40,40,40,1)'}/>
+            <TechnologyCard icon={<DiReact className={styles.techIcon} style={{ color: "rgb(79, 226, 226)" }} />} name={'React'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(10,40,40,1)'}/>
+            <TechnologyCard icon={<SiExpress className={styles.techIcon} style={{ color: "rgb(168, 162, 161)" }} />} name={'Express'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(20,20,20,1)'}/>
+            <TechnologyCard icon={<SiRubyonrails className={styles.techIcon} style={{ color: "rgb(160, 40, 20)" }} />} name={'Rails'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(40,10,5,1)'}/>
+            <TechnologyCard icon={<SiTailwindcss className={styles.techIcon} style={{ color: "rgb(40, 196, 228)" }} />} name={'TailWindCss'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(10,20,40,1)'}/>
+            <TechnologyCard icon={<SiBootstrap className={styles.techIcon} style={{ color: "rgb(122, 21, 195)" }} />} name={'Bootstrap'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(10,5,30,1)'}/>
 
 
 
@@ -116,13 +116,13 @@ const HomePage = () => {
 
           <h1 className={styles.technologyHeader}>Databases & ORMs</h1>
           <div className={styles.technologyGroup}>
-            <TechnologyCard icon={<SiPostgresql className={styles.techIcon} style={{ color: "rgb(61, 97, 134)" }} />} name={'Postgres'} />
-            <TechnologyCard icon={<SiSqlite className={styles.techIcon} style={{ color: "rgb(129, 177, 219)" }} />} name={'SQLite'} />
-            <TechnologyCard icon={<SiPrisma className={styles.techIcon} style={{ color: "rgb(24, 49, 69)" }} />} name={'Prisma'} />
-            <TechnologyCard icon={<SiMongodb className={styles.techIcon} style={{ color: "rgb(75, 158, 85)" }} />} name={'MongoDB'} />
-            <TechnologyCard icon={<DiMongodb className={styles.techIcon} style={{ color: "rgb(64, 137, 82)" }} />} name={'MongoAtlas'} />
-            <TechnologyCard icon={<IoMdMap className={styles.techIcon} style={{ color: "rgb(118, 21, 13)" }} />} name={'Mongoose'} />
-            <TechnologyCard icon={<SiFirebase className={styles.techIcon} style={{ color: "rgb(230, 160, 60)" }} />} name={'Firebase'} />
+            <TechnologyCard icon={<SiPostgresql className={styles.techIcon} style={{ color: "rgb(61, 97, 134)" }} />} name={'Postgres'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(10,15,20,1)'}/>
+            <TechnologyCard icon={<SiSqlite className={styles.techIcon} style={{ color: "rgb(129, 177, 219)" }} />} name={'SQLite'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(15,25,35,1)'}/>
+            <TechnologyCard icon={<SiPrisma className={styles.techIcon} style={{ color: "rgb(24, 49, 69)" }} />} name={'Prisma'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(5,10,15,1)'}/>
+            <TechnologyCard icon={<SiMongodb className={styles.techIcon} style={{ color: "rgb(75, 158, 85)" }} />} name={'MongoDB'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(10,20,15,1)'}/>
+            <TechnologyCard icon={<DiMongodb className={styles.techIcon} style={{ color: "rgb(64, 137, 82)" }} />} name={'MongoAtlas'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(20,30,25,1)'}/>
+            <TechnologyCard icon={<IoMdMap className={styles.techIcon} style={{ color: "rgb(118, 21, 13)" }} />} name={'Mongoose'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(40,10,10,1)'}/>
+            <TechnologyCard icon={<SiFirebase className={styles.techIcon} style={{ color: "rgb(230, 160, 60)" }} />} name={'Firebase'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(40,20,10,1)'}/>
 
           </div>
         </div>
