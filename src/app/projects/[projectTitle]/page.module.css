@@ -1,25 +1,77 @@
+.split {
+  @apply flex
+}
+
 .container {
-  @apply bg-bgGray m-4;
+  @apply  p-4 w-full
+  xl:w-4/5
 }
 .backIcon {
-  @apply text-white text-3xl;
+  @apply text-white text-3xl
+  xl:hidden
 }
 .image {
-  @apply w-72 h-72 mx-auto mt-4;
+  @apply w-72 h-72 mx-auto mt-4
+  xl:hidden
 }
 .title {
-  @apply text-white text-xl my-4;
+  @apply text-white text-xl my-4
+  xl:hidden
 }
 .linkIcon {
   @apply flex space-x-4;
 }
 .githubIcon {
-  @apply text-3xl text-white;
+  @apply text-3xl text-greytext
+  xl:text-5xl
 }
 .linkIcon {
-  @apply text-3xl text-white;
+  @apply text-3xl text-greytext
+  xl:text-5xl
 }
 
 .about {
-  @apply text-greytext p-2 bg-gray rounded-md text-sm mt-4;
+  @apply text-greytext p-2 bg-gray/50 rounded-md text-sm mt-4
+  xl:my-8
+}
+
+.techHeader {
+  @apply text-xl text-white my-4
+}
+.technologiesContainer {
+  @apply flex overflow-x-scroll mt-4 space-x-4
+}
+.techContainer {
+  @apply flex flex-col p-3 bg-gray/50 w-32 h-32 rounded-md
+}
+
+.techTitle {
+  @apply text-greytext mt-1
+}
+
+
+.XLcontainer {
+  @apply hidden
+  xl:block bg-gray/50 p-4 rounded-md mb-8
+}
+
+.XLimageAndTitle {
+  @apply flex
+}
+.XLimage {
+@apply w-72 h-72
+}
+
+.XLtitle {
+  @apply text-white self-end ml-4 text-3xl
+}
+
+.XLabout {
+  @apply text-white text-3xl mt-8
+}
+.XLTechTitle {
+  @apply text-white text-3xl mb-8
+}
+.XLbackIcon {
+  @apply text-white text-3xl mb-4
 }

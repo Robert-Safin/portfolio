@@ -97,6 +97,7 @@ const HomePage = () => {
             <div className={styles.projectCards}>
               <ProjectCard title="Favolist" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(40,0,0,1)'} />
               <ProjectCard title="Space Trip" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(0,10,40,1)'} />
+              <ProjectCard title="Portfolio" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(5,5,5,1)'} />
               <ProjectCard title="Virtual Styler" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(10,0,20,1)'} />
               <ProjectCard title="Ouija DEX" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(5,10,18,1)'} />
               <ProjectCard title="Aletheia" handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(0,10,10,1)'} />
