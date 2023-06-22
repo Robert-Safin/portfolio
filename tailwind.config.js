@@ -13,7 +13,8 @@ module.exports = {
       },
       colors: {
         black: "#090909",
-        gray: "#242424",
+        gray: "#202020",
+        bgGray: "#141414",
         hoverGray: "#303030",
         greytext: '#CECECE'
       },

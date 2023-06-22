@@ -44,10 +44,7 @@ const HomePage = () => {
             My start was Le Wagon bootcamp, where I learned the foundamentals of web development & programming.
             After the bootcamp I decided to pick up the latest technologies availble for web development, such as TypeScript, React and MongoDB.
             I am now working as a freelancer specialising in full-stack apps built with Next.
-
-            <br />
-            <br />
-            <p className={styles.MDaboutText2}>I am now looking for freelance jobs & and remote work opportunities.</p>
+            I am now looking for freelance jobs & and remote work opportunities.
 
           </p>
           <div className={styles.contacts}>
@@ -81,11 +78,10 @@ const HomePage = () => {
             My start was Le Wagon bootcamp, where I learned the foundamentals of web development & programming.
             After the bootcamp I decided to pick up the latest technologies availble for web development, such as TypeScript, React and MongoDB.
             I am now working as a freelancer specialising in full-stack apps built with Next.
-            <br />
-            <br />
-            <p>I am now looking for freelance jobs & and remote work opportunities.</p>
+            I am now looking for freelance jobs & and remote work opportunities.
 
           </p>
+
         </div>
 
 
@@ -114,7 +110,7 @@ const HomePage = () => {
 
             <h1 className={styles.technologyHeader}>Languages</h1>
             <div className={styles.technologyGroup}>
-              <TechnologyCard icon={<SiTypescript className={styles.techIcon} style={{ color: "rgb(60, 110, 180)" }} />} name={'TypeScript'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(20,30,40,1)'} />
+              <TechnologyCard icon={<SiTypescript className={styles.techIcon} style={{ color: "rgb(60, 110, 180)" }} />} name={'TypeScript'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(20,30,40,1)'}/>
               <TechnologyCard icon={<DiRubyRough className={styles.techIcon} style={{ color: "rgb(160, 40, 20)" }} />} name={'Ruby'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(40,10,5,1)'} />
               <TechnologyCard icon={<IoLogoJavascript className={styles.techIcon} style={{ color: "rgb(224, 209, 99)" }} />} name={'JavaScript'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(40,35,20,1)'} />
               <TechnologyCard icon={<SiHtml5 className={styles.techIcon} style={{ color: "rgb(210, 85, 50)" }} />} name={'HTML'} handleBackgroundColorChange={handleBackgroundColorChange} resetBackgroundColor={resetBackgroundColor} color={'rgba(40,20,10,1)'} />
