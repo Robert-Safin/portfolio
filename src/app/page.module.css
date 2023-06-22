@@ -17,7 +17,6 @@
   @apply p-4
   xl:w-4/5
   xl:h-full
-  /* transition-colors duration-1000 ease-in-out */
 
 }
 .avatar {
@@ -72,9 +71,13 @@
 }
 .MDaboutText {
   @apply hidden
-  xl:block xl:ml-4 text-greytext xl:text-sm
+  xl:block xl:ml-4 text-greytext xl:text-xl
 }
 
+.MDaboutText2 {
+  @apply hidden
+  xl:block  text-greytext xl:text-xl
+}
 
 
 .projectHeader {

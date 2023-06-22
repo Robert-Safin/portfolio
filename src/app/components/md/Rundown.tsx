@@ -2,7 +2,7 @@ import { FC } from "react";
 import styles from './Rundown.module.css'
 import Link from "next/link";
 import { IoLogoGithub } from "react-icons/io";
-import { AiOutlineLinkedin, AiOutlineMail, AiOutlineWhatsApp } from "react-icons/ai";
+import { AiOutlineLinkedin, AiOutlineMail, AiOutlineProfile, AiOutlineWhatsApp } from "react-icons/ai";
 
 const SideBar: FC = () => {
   return (
@@ -27,6 +27,9 @@ const SideBar: FC = () => {
           <Link href={`https://wa.me/+79670429889`}>
             <div className={styles.contactItem}> <AiOutlineWhatsApp className={styles.contactIcon} /> <p className={styles.contactText}>WhatsApp</p> </div>
           </Link>
+          <Link href={``}>
+              <div className={styles.contactItem}> <AiOutlineProfile className={styles.contactIcon} /> <p className={styles.contactText}>Resume</p> </div>
+            </Link>
         </div>
       </div>
 
