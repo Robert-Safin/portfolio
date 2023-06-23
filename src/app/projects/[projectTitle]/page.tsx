@@ -36,7 +36,6 @@ const ProjectShowPage: NextPage<Props> = (props) => {
     setBackgroundCol('rgba(20,20,20,1)')
   }
 
-console.log(props.params.projectTitle);
 
   return (
     <div className={styles.split}>

@@ -157,13 +157,13 @@ const ProjectData = {
   VirtualStyler: {
     title: "Virtual Styler",
     githubLink: "https://github.com/anteadc/virtual-styler",
-    liveLink: <>
+    liveLink: '',
+    about: <>
     <p>Virtual Styler is an app designed for people who have just purchased new real estate, without any furniture. The app guides the user room by room, asking for their style preferences and suggesting visual design samples, allowing users to add pieces of furniture to their baskets.</p>
     <p>Alternatively the user can employ a freelance designer to do the work via the app.</p>
     <br />
     <p>The app leverages the simplicity of Rails to quickly create an MVP.</p>
     </>,
-    about: "Virtual Styler about",
     technologies: [
       {
         title: "Ruby on Rails",
