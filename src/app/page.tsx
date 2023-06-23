@@ -69,35 +69,35 @@ const HomePage = () => {
             </p>
             <div className={styles.contacts}>
               <h1 className={styles.contactHeader}>Contact</h1>
-              <Link href={`https://github.com/Robert-Safin`}>
+              <Link href={`https://github.com/Robert-Safin`} target="_blank">
                 <div className={styles.contactItem}>
                   {" "}
                   <IoLogoGithub className={styles.contactIcon} />{" "}
                   <p className={styles.contactText}>GitHub</p>{" "}
                 </div>
               </Link>
-              <Link href={`mailto:robertsafin98@gmail.com`}>
+              <Link href={`mailto:robertsafin98@gmail.com`} target="_blank">
                 <div className={styles.contactItem}>
                   {" "}
                   <AiOutlineMail className={styles.contactIcon} />{" "}
                   <p className={styles.contactText}>Email</p>{" "}
                 </div>
               </Link>
-              <Link href={`https://www.linkedin.com/in/robert-safin/`}>
+              <Link href={`https://www.linkedin.com/in/robert-safin/`} target="_blank">
                 <div className={styles.contactItem}>
                   {" "}
                   <AiOutlineLinkedin className={styles.contactIcon} />{" "}
                   <p className={styles.contactText}>LinkedIn</p>{" "}
                 </div>
               </Link>
-              <Link href={`https://wa.me/+79670429889`}>
+              <Link href={`https://wa.me/+79670429889`} target="_blank">
                 <div className={styles.contactItem}>
                   {" "}
                   <AiOutlineWhatsApp className={styles.contactIcon} />{" "}
                   <p className={styles.contactText}>WhatsApp</p>{" "}
                 </div>
               </Link>
-              <Link href={``}>
+              <Link href={`CV EN.pdf`} target="_blank">
                 <div className={styles.contactItem}>
                   {" "}
                   <AiOutlineProfile className={styles.contactIcon} />{" "}
@@ -155,7 +155,7 @@ const HomePage = () => {
                   resetBackgroundColor={resetBackgroundColor}
                   color={"rgba(10,0,20,1)"}
                 />
-                <ProjectCard
+                {/* <ProjectCard
                   imageSrc={``}
                   title="Ouija-DEX"
                   handleBackgroundColorChange={handleBackgroundColorChange}
@@ -168,7 +168,7 @@ const HomePage = () => {
                   handleBackgroundColorChange={handleBackgroundColorChange}
                   resetBackgroundColor={resetBackgroundColor}
                   color={"rgba(0,10,10,1)"}
-                />
+                /> */}
               </div>
             </div>
 
