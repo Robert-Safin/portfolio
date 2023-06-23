@@ -20,9 +20,9 @@ const ProjectShowPage: NextPage<Props> = (props) => {
   let data;
   if (props.params.projectTitle === "Favolist") {
     data = ProjectData.Favolist;
-  } else if (props.params.projectTitle === "Space%20Trip") {
+  } else if (props.params.projectTitle === "Space-Trip") {
     data = ProjectData.SpaceTrip;
-  } else if (props.params.projectTitle === "Virtual%20Styler") {
+  } else if (props.params.projectTitle === "Virtual-Styler") {
     data = ProjectData.VirtualStyler
   } else if (props.params.projectTitle === "Portfolio") {
     data = ProjectData.Portfolio
@@ -36,12 +36,14 @@ const ProjectShowPage: NextPage<Props> = (props) => {
     setBackgroundCol('rgba(20,20,20,1)')
   }
 
+console.log(props.params.projectTitle);
 
   return (
     <div className={styles.split}>
       <SideBar />
 
       <div className={styles.container} style={{background: backgroundCol, transitionDuration: "1s"}}>
+
         <div className={styles.XLcontainer}>
           <Link href={`/`}>
           <IoIosArrowBack className={styles.XLbackIcon} />
@@ -49,7 +51,7 @@ const ProjectShowPage: NextPage<Props> = (props) => {
           <div className={styles.XLimageAndTitle}>
             <Image
               className={styles.XLimage}
-              src={`/projects/${props.params.projectTitle}.png`}
+              src={`/${props.params.projectTitle}.png`}
               alt={`project image`}
               width={1000}
               height={1000}
@@ -62,7 +64,7 @@ const ProjectShowPage: NextPage<Props> = (props) => {
         </Link>
         <Image
           className={styles.image}
-          src={`/projects/${props.params.projectTitle}.png`}
+          src={`/${props.params.projectTitle}.png`}
           alt={`project image`}
           width={1000}
           height={1000}
@@ -71,10 +73,10 @@ const ProjectShowPage: NextPage<Props> = (props) => {
 
         <div className={styles.linkIcon}>
           <Link href={data!.githubLink}>
-            <AiOutlineGithub className={styles.githubIcon} />
+            <AiOutlineGithub className={ styles.githubIcon} />
           </Link>
           <Link href={data!.liveLink}>
-            <AiOutlineLink className={styles.linkIcon} />
+            <AiOutlineLink className={data?.liveLink === '' ? styles.linkInactive : styles.linkIcon} />
           </Link>
         </div>
         <h1 className={styles.title}>About project</h1>

@@ -14,7 +14,7 @@
  @apply xl:w-1/2
 }
 .container {
-  @apply p-4
+  @apply
   xl:w-4/5
   xl:h-full
 
@@ -131,4 +131,9 @@
 .languageBox {
   @apply bg-gray/50  rounded-md mb-4 w-full p-2
 
+}
+
+.fade {
+  background: linear-gradient(0deg, rgba(13,13,13,0.3) 56%, rgba(101,101,101,0.3) 82%);
+  padding: 20px;
 }

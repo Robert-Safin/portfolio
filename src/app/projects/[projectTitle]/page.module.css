@@ -21,12 +21,17 @@
 .linkIcon {
   @apply flex space-x-4;
 }
+
 .githubIcon {
   @apply text-3xl text-greytext
   xl:text-5xl
 }
 .linkIcon {
-  @apply text-3xl text-greytext
+  @apply text-3xl text-green-600
+  xl:text-5xl
+}
+.linkInactive {
+  @apply text-3xl text-red-600
   xl:text-5xl
 }
 
@@ -59,7 +64,7 @@
   @apply flex
 }
 .XLimage {
-@apply w-72 h-72
+@apply w-72 h-72 object-cover
 }
 
 .XLtitle {
