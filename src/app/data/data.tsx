@@ -201,7 +201,7 @@ const ProjectData = {
   Portfolio: {
     title: "Portfolio",
     githubLink: "https://github.com/Robert-Safin/portfolio",
-    liveLink: "/",
+    liveLink: "https://portfolio-sable-three-43.vercel.app/",
     about: "Spotify inspired design, with responsive and shifting layouts.",
     technologies: [
       {
