@@ -26,6 +26,10 @@ const ProjectShowPage: NextPage<Props> = (props) => {
     data = ProjectData.VirtualStyler
   } else if (props.params.projectTitle === "Portfolio") {
     data = ProjectData.Portfolio
+  } else if (props.params.projectTitle === "Dex-Landing") {
+    data = ProjectData.DexLanding
+  } else if (props.params.projectTitle === "Aletheia") {
+    data  = ProjectData.Alethiea
   }
 
   const handleColorChange = (col:any) => {

@@ -4,6 +4,7 @@ import {
   SiMongodb,
   SiNextdotjs,
   SiPostgresql,
+  SiPrisma,
   SiRubyonrails,
   SiStimulus,
   SiTailwindcss,
@@ -226,6 +227,74 @@ const ProjectData = {
       },
     ],
   },
+  DexLanding: {
+    title: "Dex Landing",
+    githubLink: "https://github.com/Robert-Safin/ouija-dex-landing",
+    liveLink: "https://ouija-dex-landing.vercel.app/",
+    about: "Landing page for a decentralized crypto currency exchange.",
+    technologies: [
+      {
+        title: "Next",
+        icon: <SiNextdotjs key={"next"} className={styles.icon}  style={{ color: "rgb(30, 30, 30)" }}/>,
+        bgcol: "rgba(10,10,10,1)",
+      },
+      {
+        title: "React",
+        icon: <DiReact key={"react"} className={styles.icon}  style={{ color: "rgb(47, 214, 219)" }}/>,
+        bgcol: "rgba(10,35,40,1)",
+      },
+      {
+        title: "TypeScript",
+        icon: <SiTypescript key={"type"} className={styles.icon}  style={{ color: "rgb(60, 110, 180)" }}/>,
+        bgcol: "rgba(10,20,30,1)",
+      },
+      {
+        title: "TailWindCss",
+        icon: <SiTailwindcss key={"Tailwind"} className={styles.icon}  style={{ color: "rgb(60, 110, 180)" }}/>,
+        bgcol: "rgba(15,20,25,1)",
+      },
+    ],
+  },
+
+  Alethiea: {
+    title: "Alethiea",
+    githubLink: "https://github.com/Robert-Safin/aletheia",
+    liveLink: "https://aletheia-orpin.vercel.app/home",
+    about: <>
+    <p>On one hand Aletheia lets users see offers and events around them, on the other hand it the app allows small to medium businesses get exposure.</p>
+    <p>The entire application is built using React server components, type safe date fetching happens on the server. The app also implements experimental server actions, allowing server side data mutations on the client side.</p>
+    <p>The app relies on Google API to geolocate events and offers, browser Geolocation API is used obtain user`s coordinates, together generating content for the user.</p>
+    </>,
+    technologies: [
+      {
+        title: "Next",
+        icon: <SiNextdotjs key={"next"} className={styles.icon}  style={{ color: "rgb(30, 30, 30)" }}/>,
+        bgcol: "rgba(10,10,10,1)",
+      },
+      {
+        title: "React",
+        icon: <DiReact key={"react"} className={styles.icon}  style={{ color: "rgb(47, 214, 219)" }}/>,
+        bgcol: "rgba(10,35,40,1)",
+      },
+      {
+        title: "TypeScript",
+        icon: <SiTypescript key={"type"} className={styles.icon}  style={{ color: "rgb(60, 110, 180)" }}/>,
+        bgcol: "rgba(10,20,30,1)",
+      },
+      {
+        title: "TailWindCss",
+        icon: <SiTailwindcss key={"Tailwind"} className={styles.icon}  style={{ color: "rgb(60, 110, 180)" }}/>,
+        bgcol: "rgba(15,20,25,1)",
+      },
+      {
+        title: "Prisma",
+        icon: <SiPrisma key={"prisma"} className={styles.icon}  style={{ color: "rgb(60, 110, 180)" }}/>,
+        bgcol: "rgba(10,20,20,1)",
+      }
+    ]
+  }
+
+
 
 };
 

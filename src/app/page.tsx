@@ -155,20 +155,20 @@ const HomePage = () => {
                   resetBackgroundColor={resetBackgroundColor}
                   color={"rgba(10,0,20,1)"}
                 />
-                {/* <ProjectCard
-                  imageSrc={``}
-                  title="Ouija-DEX"
+                <ProjectCard
+                  imageSrc={`/dex-landing.png`}
+                  title="Dex-Landing"
                   handleBackgroundColorChange={handleBackgroundColorChange}
                   resetBackgroundColor={resetBackgroundColor}
-                  color={"rgba(5,10,18,1)"}
+                  color={"rgba(10,20,30,1)"}
                 />
                 <ProjectCard
-                  imageSrc={``}
+                  imageSrc={`/Aletheia.png`}
                   title="Aletheia"
                   handleBackgroundColorChange={handleBackgroundColorChange}
                   resetBackgroundColor={resetBackgroundColor}
                   color={"rgba(0,10,10,1)"}
-                /> */}
+                />
               </div>
             </div>
 

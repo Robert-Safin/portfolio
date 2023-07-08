@@ -11,7 +11,7 @@
   xl:hidden
 }
 .image {
-  @apply w-72 h-72 mx-auto mt-4
+  @apply w-72 h-72 mx-auto mt-4 object-cover
   xl:hidden
 }
 .title {
@@ -51,7 +51,8 @@
 }
 
 .techTitle {
-  @apply text-greytext mt-1
+  @apply text-greytext mt-1 text-xs
+  xl:text-sm
 }
 
 
@@ -72,10 +73,12 @@
 }
 
 .XLabout {
-  @apply text-white text-3xl mt-8
+  @apply text-white text-3xl mt-8 hidden
+  xl:block
 }
 .XLTechTitle {
-  @apply text-white text-3xl mb-8
+  @apply text-white text-3xl mb-8 hidden
+  xl:block
 }
 .XLbackIcon {
   @apply text-white text-3xl mb-4
