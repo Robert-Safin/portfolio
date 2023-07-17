@@ -27,7 +27,7 @@ const SideBar: FC = () => {
           <Link href={`https://wa.me/+79670429889`}>
             <div className={styles.contactItem}> <AiOutlineWhatsApp className={styles.contactIcon} /> <p className={styles.contactText}>WhatsApp</p> </div>
           </Link>
-          <Link href={``}>
+          <Link href={`CV EN.pdf`} target="_blank">
               <div className={styles.contactItem}> <AiOutlineProfile className={styles.contactIcon} /> <p className={styles.contactText}>Resume</p> </div>
             </Link>
         </div>

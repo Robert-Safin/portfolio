@@ -56,16 +56,15 @@ const HomePage = () => {
               height={1000}
             />
             <p className={styles.MDaboutText}>
-              Hello, I am Robert, I was born in Russia and raised in the United
-              Kingdom. I am an economist with 2 years experience working in the
-              petroleum & gas and real estate development industries. I decided
-              to to have a career change and become a developer. My start was Le
-              Wagon bootcamp, where I learned the foundamentals of web
-              development & programming. After the bootcamp I decided to pick up
-              the latest technologies availble for web development, such as
-              TypeScript, React and MongoDB. I am now working as a freelancer
-              specialising in full-stack apps built with Next. I am now looking
-              for freelance jobs & and remote work opportunities.
+              Hi, I am Rob, I am an economist with 2 years experience working in
+              the petroleum & gas and real estate development industries. Recently
+              I decided to to have a career change and become a web developer.
+              I have completed Le Wagon bootcamp, where I learned the foundamentals
+              of web development & programming. After the bootcamp I decided to pick
+              up the latest technologies availble for web development, such as
+              TypeScript, React/Next, MongoDB/Prisma and TailwindCSS. I am currently
+              working on a few freelance projects for friends and family. Currently residing
+              in Bali, and looking for front-end/full-stack opportunities in React/Next.
             </p>
             <div className={styles.contacts}>
               <h1 className={styles.contactHeader}>Contact</h1>
@@ -110,16 +109,15 @@ const HomePage = () => {
           <h1 className={styles.aboutHeader}>About</h1>
           <div className={styles.about}>
             <p className={styles.aboutText}>
-              Hello, I am Robert, I was born in Russia and raised in the United
-              Kingdom. I am an economist with 2 years experience working in the
-              petroleum & gas and real estate development industries. I decided
-              to to have a career change and become a developer. My start was Le
-              Wagon bootcamp, where I learned the foundamentals of web
-              development & programming. After the bootcamp I decided to pick up
-              the latest technologies availble for web development, such as
-              TypeScript, React and MongoDB. I am now working as a freelancer
-              specialising in full-stack apps built with Next. I am now looking
-              for freelance jobs & and remote work opportunities.
+              Hi, I am Rob, I am an economist with 2 years experience working in
+              the petroleum & gas and real estate development industries. Recently
+              I decided to to have a career change and become a web developer.
+              I have completed Le Wagon bootcamp, where I learned the foundamentals
+              of web development & programming. After the bootcamp I decided to pick
+              up the latest technologies availble for web development, such as
+              TypeScript, React/Next, MongoDB/Prisma and TailwindCSS. I am currently
+              working on a few freelance projects for friends and family. Currently residing
+              in Bali.
             </p>
           </div>
 
