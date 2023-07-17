@@ -61,6 +61,7 @@ const ProjectShowPage: NextPage<Props> = (props) => {
             />
             <h1 className={styles.XLtitle}>{data?.title}</h1>
           </div>
+
         </div>
         <Link href={`/`}>
           <IoIosArrowBack className={styles.backIcon} />
